@@ -1,0 +1,22 @@
+# Inventario de servidores - Generado automáticamente
+# Formato esperado: nombre ; ip ; sistema ; ubicacion ; responsable
+
+# Líneas válidas
+srv-web01 ; 192.168.1.10 ; linux ; sala 1 ; Ana
+srv-db01 ; 192.168.1.20 ; windows ; sala 2 ; Carlos
+srv-backup01 ; 192.168.1.30 ; linux ; sala 1 ; -
+srv-web02 ; 192.168.1.10 ; linux ; sala 3 ; Ana  
+srv-cache01 ; 10.0.0.5 ; linux ; ; Javier
+srv-cache02 ; 10.0.0.5 ; linux ; sala 2 ; Javier  
+
+# ERROR_NOMBRE_INVALIDO → nombre vacío
+ ; 192.168.1.40 ; linux ; sala 3 ; María
+
+# ERROR_IP_INVALIDA → IP no válida
+srv-mail02 ; 300.168.1.50 ; windows ; sala 3 ; Pedro
+
+# ERROR_SISTEMA_INVALIDO → sistema no permitido
+srv-extra01 ; 192.168.1.60 ; solaris ; sala 4 ; Paula
+
+# ERROR_CAMPOS_INCOMPLETO
+srv-monitor01 ; 10.0.0.6
